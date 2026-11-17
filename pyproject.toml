@@ -1,0 +1,16 @@
+[project]
+name = "habit-tracker"
+version = "1.0.0"
+description = "A simple command-line habit tracker with streak tracking"
+requires-python = ">=3.9"
+dependencies = [
+    "click>=8.1.0",
+    "rich>=13.0.0",
+]
+
+[project.scripts]
+habit = "habit_tracker.cli:cli"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
